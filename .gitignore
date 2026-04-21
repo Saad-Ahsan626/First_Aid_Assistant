@@ -1,0 +1,54 @@
+# ---------------------------------------------------
+# 1. User Specific Rules
+# ---------------------------------------------------
+# Exclude the idea folder 
+.idea/
+idea/
+
+# Explicitly INCLUDE the assets folder
+!assets/
+
+# ---------------------------------------------------
+# 2. Excluded Platforms (Strictly Android Only)
+# ---------------------------------------------------
+# Ignore all platform directories other than Android
+/ios/
+/web/
+/windows/
+/macos/
+/linux/
+
+# ---------------------------------------------------
+# 3. Android Specific
+# ---------------------------------------------------
+/android/.gradle/
+/android/local.properties
+/android/gradle.properties
+/android/app/build/
+/android/captures/
+*.jks
+*.keystore
+*.ap_
+*.dex
+*.class
+
+# ---------------------------------------------------
+# 4. Flutter & Dart Specific
+# ---------------------------------------------------
+.dart_tool/
+.packages
+build/
+.pub-cache/
+.pub/
+/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java
+
+# ---------------------------------------------------
+# 5. IDEs & Miscellaneous
+# ---------------------------------------------------
+*.iml
+*.ipr
+*.iws
+.vscode/
+.DS_Store
+*.log
+*.swp
