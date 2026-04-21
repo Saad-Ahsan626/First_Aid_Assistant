@@ -64,6 +64,7 @@ flutter:
   assets:
     - assets/first-aid-box.png
     - assets/data/emergencies.json
+    - assets/images/emergencies/
 
 flutter_native_splash:
     color: "129490"

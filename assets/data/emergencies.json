@@ -4,7 +4,7 @@
       "id": "cpr_adult",
       "title_en": "CPR (Adult)",
       "title_ur": "سی پی آر (بالغ)",
-      "icon": "cpr_icon",
+      "icon": "assets/images/emergencies/cpr_adult.png",
       "steps": [
         {
           "step": 1,
@@ -32,7 +32,7 @@
       "id": "choking_adult",
       "title_en": "Choking (Adult/Child)",
       "title_ur": "گلے میں کچھ پھنس جانا (بالغ/بچہ)",
-      "icon": "choking_icon",
+      "icon": "assets/images/emergencies/choking_adult.png",
       "steps": [
         {
           "step": 1,
@@ -60,7 +60,7 @@
       "id": "choking_infant",
       "title_en": "Choking (Infant under 1 year)",
       "title_ur": "گلے میں کچھ پھنس جانا (شیر خوار بچہ)",
-      "icon": "choking_infant_icon",
+      "icon": "assets/images/emergencies/choking_infant.png",
       "steps": [
         {
           "step": 1,
@@ -88,7 +88,7 @@
       "id": "severe_bleeding",
       "title_en": "Severe Bleeding",
       "title_ur": "شدید خون بہنا",
-      "icon": "bleeding_icon",
+      "icon": "assets/images/emergencies/severe_bleeding.png",
       "steps": [
         {
           "step": 1,
@@ -116,7 +116,7 @@
       "id": "burns",
       "title_en": "Burns",
       "title_ur": "جل جانا",
-      "icon": "burn_icon",
+      "icon": "assets/images/emergencies/burns.png",
       "steps": [
         {
           "step": 1,
@@ -144,7 +144,7 @@
       "id": "seizures",
       "title_en": "Seizures / Epilepsy",
       "title_ur": "مرگی کا دورہ",
-      "icon": "seizure_icon",
+      "icon": "assets/images/emergencies/seizures.png",
       "steps": [
         {
           "step": 1,
@@ -172,7 +172,7 @@
       "id": "heart_attack",
       "title_en": "Heart Attack",
       "title_ur": "دل کا دورہ",
-      "icon": "heart_attack_icon",
+      "icon": "assets/images/emergencies/heart_attack.png",
       "steps": [
         {
           "step": 1,
@@ -200,7 +200,7 @@
       "id": "stroke",
       "title_en": "Stroke",
       "title_ur": "فالج (سٹروک)",
-      "icon": "stroke_icon",
+      "icon": "assets/images/emergencies/stroke.png",
       "steps": [
         {
           "step": 1,
@@ -228,7 +228,7 @@
       "id": "asthma_attack",
       "title_en": "Asthma Attack",
       "title_ur": "دمہ کا دورہ",
-      "icon": "asthma_icon",
+      "icon": "assets/images/emergencies/asthma_attack.png",
       "steps": [
         {
           "step": 1,
@@ -256,7 +256,7 @@
       "id": "anaphylaxis",
       "title_en": "Severe Allergic Reaction (Anaphylaxis)",
       "title_ur": "شدید الرجی (اینافلیکسس)",
-      "icon": "allergy_icon",
+      "icon": "assets/images/emergencies/anaphylaxis.png",
       "steps": [
         {
           "step": 1,
@@ -284,7 +284,7 @@
       "id": "fractures",
       "title_en": "Fractures / Broken Bones",
       "title_ur": "ہڈی ٹوٹنا",
-      "icon": "fracture_icon",
+      "icon": "assets/images/emergencies/fractures.png",
       "steps": [
         {
           "step": 1,
@@ -312,7 +312,7 @@
       "id": "head_injury",
       "title_en": "Head Injury / Concussion",
       "title_ur": "سر کی چوٹ",
-      "icon": "head_injury_icon",
+      "icon": "assets/images/emergencies/head_injury.png",
       "steps": [
         {
           "step": 1,
@@ -340,7 +340,7 @@
       "id": "poisoning",
       "title_en": "Poisoning",
       "title_ur": "زہر خوانی",
-      "icon": "poison_icon",
+      "icon": "assets/images/emergencies/poisoning.png",
       "steps": [
         {
           "step": 1,
@@ -368,7 +368,7 @@
       "id": "heatstroke",
       "title_en": "Heat Exhaustion & Heatstroke",
       "title_ur": "گرمی لگنا / لو لگنا",
-      "icon": "heatstroke_icon",
+      "icon": "assets/images/emergencies/heatstroke.png",
       "steps": [
         {
           "step": 1,
@@ -396,7 +396,7 @@
       "id": "hypothermia",
       "title_en": "Hypothermia",
       "title_ur": "شدید سردی لگنا (ہائپوتھرمیا)",
-      "icon": "hypothermia_icon",
+      "icon": "assets/images/emergencies/hypothermia.png",
       "steps": [
         {
           "step": 1,
@@ -424,7 +424,7 @@
       "id": "snake_bite",
       "title_en": "Snake Bite",
       "title_ur": "سانپ کا کاٹنا",
-      "icon": "snake_icon",
+      "icon": "assets/images/emergencies/snake_bite.png",
       "steps": [
         {
           "step": 1,
@@ -452,7 +452,7 @@
       "id": "animal_bite",
       "title_en": "Dog Bite / Animal Bite",
       "title_ur": "کتے یا جانور کا کاٹنا",
-      "icon": "dog_bite_icon",
+      "icon": "assets/images/emergencies/animal_bite.png",
       "steps": [
         {
           "step": 1,
@@ -480,7 +480,7 @@
       "id": "fainting",
       "title_en": "Fainting",
       "title_ur": "بے ہوش ہونا",
-      "icon": "faint_icon",
+      "icon": "assets/images/emergencies/fainting.png",
       "steps": [
         {
           "step": 1,
@@ -508,7 +508,7 @@
       "id": "nosebleed",
       "title_en": "Nosebleed",
       "title_ur": "نکسیر (ناک سے خون بہنا)",
-      "icon": "nosebleed_icon",
+      "icon": "assets/images/emergencies/nosebleed.png",
       "steps": [
         {
           "step": 1,
@@ -536,7 +536,7 @@
       "id": "eye_injury",
       "title_en": "Eye Injury / Chemical in Eye",
       "title_ur": "آنکھ کی چوٹ / کیمیکل کا جانا",
-      "icon": "eye_injury_icon",
+      "icon": "assets/images/emergencies/eye_injury.png",
       "steps": [
         {
           "step": 1,
