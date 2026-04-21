@@ -1,0 +1,564 @@
+{
+  "emergencies": [
+    {
+      "id": "cpr_adult",
+      "title_en": "CPR (Adult)",
+      "title_ur": "سی پی آر (بالغ)",
+      "icon": "cpr_icon",
+      "steps": [
+        {
+          "step": 1,
+          "en": "Check the scene for safety, then tap the person's shoulder and shout to check for responsiveness.",
+          "ur": "جگہ کے محفوظ ہونے کی تصدیق کریں، پھر مریض کے کندھے پر تھپتھپا کر اور پکار کر ہوش چیک کریں۔"
+        },
+        {
+          "step": 2,
+          "en": "If there is no response and no breathing (or only gasping), call 1122 immediately.",
+          "ur": "اگر مریض جواب نہ دے اور سانس نہ لے رہا ہو تو فوراً 1122 پر کال کریں۔"
+        },
+        {
+          "step": 3,
+          "en": "Place the heel of one hand in the center of their chest, place your other hand on top, and interlock your fingers.",
+          "ur": "اپنے ایک ہاتھ کی ہتھیلی کا نچلا حصہ مریض کے سینے کے درمیان رکھیں، دوسرا ہاتھ اس کے اوپر رکھیں اور انگلیاں آپس میں پھنسا لیں۔"
+        },
+        {
+          "step": 4,
+          "en": "Push hard and fast (at least 2 inches deep, 100-120 compressions per minute). Allow the chest to fully rise between pushes.",
+          "ur": "تیزی اور زور سے دبائیں (کم از کم 2 انچ گہرا، ایک منٹ میں 100 سے 120 بار)۔ ہر دباؤ کے بعد سینے کو واپس اوپر آنے دیں۔"
+        }
+      ]
+    },
+    {
+      "id": "choking_adult",
+      "title_en": "Choking (Adult/Child)",
+      "title_ur": "گلے میں کچھ پھنس جانا (بالغ/بچہ)",
+      "icon": "choking_icon",
+      "steps": [
+        {
+          "step": 1,
+          "en": "Ask 'Are you choking?' If they cannot cough, speak, or breathe, tell them you are going to help.",
+          "ur": "پوچھیں 'کیا آپ کے گلے میں کچھ پھنسا ہے؟' اگر وہ کھانس، بول یا سانس نہیں لے سکتے تو انہیں بتائیں کہ آپ مدد کرنے لگے ہیں۔"
+        },
+        {
+          "step": 2,
+          "en": "Give 5 back blows: Stand behind them, lean them forward, and strike 5 times between their shoulder blades with the heel of your hand.",
+          "ur": "5 بار کمر پر تھپتھپائیں: ان کے پیچھے کھڑے ہوں، انہیں تھوڑا آگے جھکائیں اور کندھوں کے درمیان 5 بار ہاتھ کی ہتھیلی سے ماریں۔"
+        },
+        {
+          "step": 3,
+          "en": "Give 5 abdominal thrusts (Heimlich maneuver): Make a fist just above their belly button, grab it with your other hand, and pull inward and upward quickly.",
+          "ur": "5 بار پیٹ پر جھٹکے دیں: ان کی ناف کے بالکل اوپر مٹھی رکھیں، دوسرے ہاتھ سے مٹھی پکڑیں اور تیزی سے اندر اور اوپر کی طرف کھینچیں۔"
+        },
+        {
+          "step": 4,
+          "en": "Repeat 5 back blows and 5 abdominal thrusts until the object is forced out or the person becomes unconscious.",
+          "ur": "جب تک پھنسی ہوئی چیز نکل نہ جائے یا مریض بے ہوش نہ ہو جائے، یہ عمل دہراتے رہیں۔"
+        }
+      ]
+    },
+    {
+      "id": "choking_infant",
+      "title_en": "Choking (Infant under 1 year)",
+      "title_ur": "گلے میں کچھ پھنس جانا (شیر خوار بچہ)",
+      "icon": "choking_infant_icon",
+      "steps": [
+        {
+          "step": 1,
+          "en": "Hold the infant face down along your forearm, supporting their head and jaw with your hand.",
+          "ur": "بچے کو اپنے بازو پر الٹا لٹائیں، اور اپنے ہاتھ سے اس کے سر اور جبڑے کو سہارا دیں۔"
+        },
+        {
+          "step": 2,
+          "en": "Give 5 gentle but firm back slaps between the infant's shoulder blades.",
+          "ur": "بچے کے کندھوں کے درمیان 5 بار نرمی لیکن مضبوطی سے تھپتھپائیں۔"
+        },
+        {
+          "step": 3,
+          "en": "Turn the infant face up. Place two fingers in the center of the chest and give 5 quick chest thrusts (about 1.5 inches deep).",
+          "ur": "بچے کو سیدھا کریں۔ سینے کے درمیان دو انگلیاں رکھیں اور 5 بار تیزی سے سینہ دبائیں۔"
+        },
+        {
+          "step": 4,
+          "en": "Repeat until the object comes out or the infant cries/breathes.",
+          "ur": "یہ عمل تب تک دہرائیں جب تک چیز نکل نہ جائے یا بچہ رونے/سانس لینے نہ لگے۔"
+        }
+      ]
+    },
+    {
+      "id": "severe_bleeding",
+      "title_en": "Severe Bleeding",
+      "title_ur": "شدید خون بہنا",
+      "icon": "bleeding_icon",
+      "steps": [
+        {
+          "step": 1,
+          "en": "Find the source of the bleeding. Call 1122 immediately for severe wounds.",
+          "ur": "خون بہنے کی جگہ تلاش کریں۔ شدید زخم کی صورت میں فوراً 1122 پر کال کریں۔"
+        },
+        {
+          "step": 2,
+          "en": "Cover the wound with a sterile dressing or clean cloth.",
+          "ur": "زخم کو جراثیم سے پاک پٹی یا صاف کپڑے سے ڈھانپیں۔"
+        },
+        {
+          "step": 3,
+          "en": "Apply continuous, firm, direct pressure on the wound with both hands.",
+          "ur": "دونوں ہاتھوں سے زخم پر مسلسل اور مضبوطی سے دباؤ ڈال کر رکھیں۔"
+        },
+        {
+          "step": 4,
+          "en": "Do not remove the cloth if blood soaks through; add more layers on top and keep pressing.",
+          "ur": "اگر کپڑا خون سے بھیگ جائے تو اسے ہٹائیں نہیں، بلکہ اس کے اوپر مزید کپڑا رکھ کر دباتے رہیں۔"
+        }
+      ]
+    },
+    {
+      "id": "burns",
+      "title_en": "Burns",
+      "title_ur": "جل جانا",
+      "icon": "burn_icon",
+      "steps": [
+        {
+          "step": 1,
+          "en": "Move the person away from the heat source immediately.",
+          "ur": "مریض کو فوراً گرمی یا آگ کے منبع سے دور کریں۔"
+        },
+        {
+          "step": 2,
+          "en": "Cool the burn by holding it under cool (not ice cold) running water for at least 10 to 15 minutes.",
+          "ur": "جلی ہوئی جگہ کو کم از کم 10 سے 15 منٹ تک ٹھنڈے (برفیلے نہیں) بہتے پانی کے نیچے رکھ کر ٹھنڈا کریں۔"
+        },
+        {
+          "step": 3,
+          "en": "Remove tight items like rings or watches from the burned area before it swells.",
+          "ur": "سوجن شروع ہونے سے پہلے جلی ہوئی جگہ سے انگوٹھیاں یا گھڑیاں جیسی تنگ چیزیں اتار لیں۔"
+        },
+        {
+          "step": 4,
+          "en": "Cover the burn loosely with a sterile, non-fluffy dressing or clean cling film. Do not pop blisters.",
+          "ur": "جلی ہوئی جگہ کو جراثیم سے پاک پٹی یا صاف پلاسٹک سے ڈھیلا ڈھانپیں۔ چھالوں کو مت پھوڑیں۔"
+        }
+      ]
+    },
+    {
+      "id": "seizures",
+      "title_en": "Seizures / Epilepsy",
+      "title_ur": "مرگی کا دورہ",
+      "icon": "seizure_icon",
+      "steps": [
+        {
+          "step": 1,
+          "en": "Ease the person to the floor to prevent them from falling and getting hurt.",
+          "ur": "مریض کو گرنے اور زخمی ہونے سے بچانے کے لیے آہستہ سے فرش پر لٹا دیں۔"
+        },
+        {
+          "step": 2,
+          "en": "Clear the area of any hard or sharp objects. Place something soft and flat under their head.",
+          "ur": "اردگرد سے سخت یا تیز دھار چیزیں ہٹا دیں۔ ان کے سر کے نیچے کوئی نرم اور چپٹی چیز رکھیں۔"
+        },
+        {
+          "step": 3,
+          "en": "Do not hold them down or try to stop their movements. Never put anything in their mouth.",
+          "ur": "انہیں زبردستی پکڑنے یا حرکت روکنے کی کوشش نہ کریں۔ ان کے منہ میں ہرگز کوئی چیز نہ ڈالیں۔"
+        },
+        {
+          "step": 4,
+          "en": "Time the seizure. Once it stops, gently roll them onto their side (recovery position) to keep their airway clear.",
+          "ur": "دورے کا وقت نوٹ کریں۔ جب دورہ رک جائے تو سانس کی نالی کھلی رکھنے کے لیے انہیں کروٹ کے بل لٹا دیں۔"
+        }
+      ]
+    },
+    {
+      "id": "heart_attack",
+      "title_en": "Heart Attack",
+      "title_ur": "دل کا دورہ",
+      "icon": "heart_attack_icon",
+      "steps": [
+        {
+          "step": 1,
+          "en": "Call 1122 immediately if the person has chest pain, shortness of breath, or pain spreading to the arm/jaw.",
+          "ur": "اگر مریض کو سینے میں درد، سانس لینے میں تکلیف، یا بازو/جبڑے تک درد پھیل رہا ہو تو فوراً 1122 پر کال کریں۔"
+        },
+        {
+          "step": 2,
+          "en": "Have the person sit down, rest, and try to keep them calm. Loosen any tight clothing.",
+          "ur": "مریض کو بٹھا دیں، آرام کرنے دیں اور انہیں پرسکون رکھنے کی کوشش کریں۔ تنگ کپڑے ڈھیلے کر دیں۔"
+        },
+        {
+          "step": 3,
+          "en": "If they are not allergic, have them chew and swallow an aspirin.",
+          "ur": "اگر انہیں الرجی نہیں ہے، تو انہیں اسپرین کی گولی چبا کر نگلنے کو کہیں۔"
+        },
+        {
+          "step": 4,
+          "en": "Be prepared to perform CPR if they lose consciousness and stop breathing.",
+          "ur": "اگر وہ بے ہوش ہو جائیں اور سانس لینا بند کر دیں تو سی پی آر (CPR) کرنے کے لیے تیار رہیں۔"
+        }
+      ]
+    },
+    {
+      "id": "stroke",
+      "title_en": "Stroke",
+      "title_ur": "فالج (سٹروک)",
+      "icon": "stroke_icon",
+      "steps": [
+        {
+          "step": 1,
+          "en": "Remember the FAST test. F (Face): Ask them to smile. Does one side of the face droop?",
+          "ur": "فاسٹ (FAST) ٹیسٹ یاد رکھیں۔ F (چہرہ): انہیں مسکرانے کا کہیں۔ کیا چہرے کا ایک حصہ لٹک رہا ہے؟"
+        },
+        {
+          "step": 2,
+          "en": "A (Arms): Ask them to raise both arms. Does one arm drift downward?",
+          "ur": "A (بازو): دونوں بازو اٹھانے کو کہیں۔ کیا ایک بازو نیچے گر رہا ہے؟"
+        },
+        {
+          "step": 3,
+          "en": "S (Speech): Ask them to repeat a simple phrase. Is their speech slurred?",
+          "ur": "S (بولنا): کوئی سادہ جملہ دہرانے کو کہیں۔ کیا ان کی زبان لڑکھڑا رہی ہے؟"
+        },
+        {
+          "step": 4,
+          "en": "T (Time): If you observe any of these signs, call 1122 immediately. Note the time the symptoms started.",
+          "ur": "T (وقت): اگر آپ ان میں سے کوئی بھی علامت دیکھیں تو فوراً 1122 پر کال کریں۔ علامات شروع ہونے کا وقت نوٹ کریں۔"
+        }
+      ]
+    },
+    {
+      "id": "asthma_attack",
+      "title_en": "Asthma Attack",
+      "title_ur": "دمہ کا دورہ",
+      "icon": "asthma_icon",
+      "steps": [
+        {
+          "step": 1,
+          "en": "Help the person sit comfortably upright and try to keep them calm. Do not let them lie down.",
+          "ur": "مریض کو سیدھا بٹھانے میں مدد کریں اور پرسکون رکھنے کی کوشش کریں۔ انہیں لیٹنے نہ دیں۔"
+        },
+        {
+          "step": 2,
+          "en": "Help them find and use their reliever inhaler (usually blue), preferably with a spacer.",
+          "ur": "ان کا انہیلر (عام طور پر نیلا) ڈھونڈنے اور استعمال کرنے میں مدد کریں، بہتر ہے کہ اسپیسر کے ساتھ استعمال کریں۔"
+        },
+        {
+          "step": 3,
+          "en": "Instruct them to take one puff every 30 to 60 seconds, up to a maximum of 10 puffs.",
+          "ur": "انہیں ہر 30 سے 60 سیکنڈ بعد ایک پف لینے کو کہیں، زیادہ سے زیادہ 10 پف تک۔"
+        },
+        {
+          "step": 4,
+          "en": "If their breathing does not improve after 10 puffs, call 1122.",
+          "ur": "اگر 10 پف کے بعد بھی سانس بہتر نہ ہو تو 1122 پر کال کریں۔"
+        }
+      ]
+    },
+    {
+      "id": "anaphylaxis",
+      "title_en": "Severe Allergic Reaction (Anaphylaxis)",
+      "title_ur": "شدید الرجی (اینافلیکسس)",
+      "icon": "allergy_icon",
+      "steps": [
+        {
+          "step": 1,
+          "en": "If the person is having trouble breathing or their face/throat is swelling, call 1122 immediately.",
+          "ur": "اگر مریض کو سانس لینے میں دشواری ہو یا چہرہ/گلا سوج رہا ہو تو فوراً 1122 پر کال کریں۔"
+        },
+        {
+          "step": 2,
+          "en": "Ask if they carry an epinephrine auto-injector (EpiPen) and help them use it if they have it.",
+          "ur": "پوچھیں کہ کیا ان کے پاس ایپی پین (ایپینفرین) ہے، اور اسے استعمال کرنے میں ان کی مدد کریں۔"
+        },
+        {
+          "step": 3,
+          "en": "Help them lie flat on their back. If breathing is difficult, let them sit up slightly.",
+          "ur": "انہیں پیٹھ کے بل سیدھا لٹا دیں۔ اگر سانس لینے میں مسئلہ ہو تو تھوڑا سا بٹھا دیں۔"
+        },
+        {
+          "step": 4,
+          "en": "If they have no pulse or breathing, begin CPR.",
+          "ur": "اگر ان کی نبض یا سانس رک جائے تو سی پی آر (CPR) شروع کریں۔"
+        }
+      ]
+    },
+    {
+      "id": "fractures",
+      "title_en": "Fractures / Broken Bones",
+      "title_ur": "ہڈی ٹوٹنا",
+      "icon": "fracture_icon",
+      "steps": [
+        {
+          "step": 1,
+          "en": "Tell the person to keep completely still. Do not try to realign the bone or push a bone that is sticking out back in.",
+          "ur": "مریض کو بالکل ساکت رہنے کا کہیں۔ ہڈی کو سیدھا کرنے یا باہر نکلی ہوئی ہڈی کو اندر دھکیلنے کی کوشش نہ کریں۔"
+        },
+        {
+          "step": 2,
+          "en": "Support the injured area above and below the fracture using your hands or folded blankets to prevent movement.",
+          "ur": "ٹوٹی ہوئی ہڈی کے اوپر اور نیچے والے حصے کو اپنے ہاتھوں یا کمبل سے سہارا دیں تاکہ حرکت نہ ہو۔"
+        },
+        {
+          "step": 3,
+          "en": "If there is bleeding, apply pressure to the wound with a sterile pad, but avoid pressing directly on the broken bone.",
+          "ur": "اگر خون بہہ رہا ہو تو زخم پر پٹی رکھ کر دبائیں، لیکن ٹوٹی ہوئی ہڈی پر سیدھا دباؤ ڈالنے سے گریز کریں۔"
+        },
+        {
+          "step": 4,
+          "en": "Call an ambulance or arrange transport to the hospital, keeping the limb elevated if possible.",
+          "ur": "ایمبولینس بلائیں یا ہسپتال لے جانے کا بندوبست کریں، اگر ممکن ہو تو زخمی اعضاء کو اونچا رکھیں۔"
+        }
+      ]
+    },
+    {
+      "id": "head_injury",
+      "title_en": "Head Injury / Concussion",
+      "title_ur": "سر کی چوٹ",
+      "icon": "head_injury_icon",
+      "steps": [
+        {
+          "step": 1,
+          "en": "Have the person sit down and rest. Tell them not to move their head or neck.",
+          "ur": "مریض کو بٹھا کر آرام کروائیں۔ انہیں اپنا سر یا گردن ہلانے سے منع کریں۔"
+        },
+        {
+          "step": 2,
+          "en": "Apply a cold compress (ice wrapped in a cloth) to the injury to reduce swelling.",
+          "ur": "سوجن کم کرنے کے لیے چوٹ پر ٹھنڈی پٹی (کپڑے میں لپٹی برف) رکھیں۔"
+        },
+        {
+          "step": 3,
+          "en": "If the wound is bleeding, apply firm pressure with a clean pad (unless you suspect a skull fracture).",
+          "ur": "اگر خون بہہ رہا ہو تو صاف پٹی سے دباؤ ڈالیں (جب تک کہ آپ کو کھوپڑی کی ہڈی ٹوٹنے کا شک نہ ہو)۔"
+        },
+        {
+          "step": 4,
+          "en": "Call 1122 if they become drowsy, vomit, have a seizure, or exhibit confusion.",
+          "ur": "اگر انہیں غنودگی ہو، قے آئے، دورہ پڑے یا ہوش و حواس میں نہ رہیں تو 1122 پر کال کریں۔"
+        }
+      ]
+    },
+    {
+      "id": "poisoning",
+      "title_en": "Poisoning",
+      "title_ur": "زہر خوانی",
+      "icon": "poison_icon",
+      "steps": [
+        {
+          "step": 1,
+          "en": "Remove the person from the source of the poison. If they swallowed it, take any remaining pieces out of their mouth.",
+          "ur": "مریض کو زہر کے منبع سے دور کریں۔ اگر انہوں نے زہر نگل لیا ہے تو ان کے منہ سے باقی ماندہ ٹکڑے نکال لیں۔"
+        },
+        {
+          "step": 2,
+          "en": "Call 1122 immediately. Have the poison container or pill bottle ready to read to the operator.",
+          "ur": "فوراً 1122 پر کال کریں۔ زہر کا ڈبہ یا گولیوں کی بوتل پاس رکھیں تاکہ آپریٹر کو پڑھ کر بتا سکیں۔"
+        },
+        {
+          "step": 3,
+          "en": "NEVER induce vomiting or give them anything to drink unless specifically instructed by a medical professional.",
+          "ur": "جب تک کوئی ڈاکٹر نہ کہے، ہرگز قے کروانے کی کوشش نہ کریں اور نہ ہی انہیں کچھ پینے کو دیں۔"
+        },
+        {
+          "step": 4,
+          "en": "If they become unconscious but are breathing normally, place them in the recovery position (on their side).",
+          "ur": "اگر وہ بے ہوش ہو جائیں لیکن نارمل سانس لے رہے ہوں، تو انہیں کروٹ کے بل لٹا دیں۔"
+        }
+      ]
+    },
+    {
+      "id": "heatstroke",
+      "title_en": "Heat Exhaustion & Heatstroke",
+      "title_ur": "گرمی لگنا / لو لگنا",
+      "icon": "heatstroke_icon",
+      "steps": [
+        {
+          "step": 1,
+          "en": "Move the person to a cool, shaded, or air-conditioned place immediately.",
+          "ur": "مریض کو فوراً کسی ٹھنڈی، سایہ دار یا ایئر کنڈیشنڈ جگہ پر لے جائیں"
+        },
+        {
+          "step": 2,
+          "en": "Have them lie down and elevate their feet slightly. Remove unnecessary clothing.",
+          "ur": "انہیں لٹا دیں اور ان کے پاؤں تھوڑے اونچے کر دیں۔ غیر ضروری کپڑے اتار دیں۔"
+        },
+        {
+          "step": 3,
+          "en": "Cool their skin by spraying them with cool water or applying cool, wet cloths to their neck, armpits, and groin.",
+          "ur": "ان کے جسم پر ٹھنڈا پانی چھڑکیں یا گردن، بغلوں اور رانوں کے درمیان ٹھنڈے، گیلے کپڑے رکھ کر انہیں ٹھنڈا کریں۔"
+        },
+        {
+          "step": 4,
+          "en": "If they are fully conscious, give them cool water to drink. If they are confused or unconscious, call 1122.",
+          "ur": "اگر وہ مکمل ہوش میں ہیں تو انہیں پینے کے لیے ٹھنڈا پانی دیں۔ اگر وہ بے ہوش یا کنفیوز ہوں تو 1122 پر کال کریں۔"
+        }
+      ]
+    },
+    {
+      "id": "hypothermia",
+      "title_en": "Hypothermia",
+      "title_ur": "شدید سردی لگنا (ہائپوتھرمیا)",
+      "icon": "hypothermia_icon",
+      "steps": [
+        {
+          "step": 1,
+          "en": "Move the person gently to a warm, dry shelter. Remove any wet clothing.",
+          "ur": "مریض کو احتیاط سے کسی گرم اور خشک جگہ پر منتقل کریں۔ گیلے کپڑے اتار دیں۔"
+        },
+        {
+          "step": 2,
+          "en": "Wrap them in dry, warm blankets. Cover their head, leaving the face clear.",
+          "ur": "انہیں خشک اور گرم کمبل میں لپیٹ دیں۔ ان کا سر ڈھانپ دیں لیکن چہرہ کھلا رہنے دیں۔"
+        },
+        {
+          "step": 3,
+          "en": "If they are fully awake, offer them a warm, non-alcoholic, and non-caffeinated beverage.",
+          "ur": "اگر وہ مکمل طور پر جاگ رہے ہیں، تو انہیں کوئی گرم مشروب دیں جس میں کیفین یا الکحل نہ ہو۔"
+        },
+        {
+          "step": 4,
+          "en": "Do not rub their skin or apply direct intense heat (like hot water bottles), as this can cause heart problems. Call 1122.",
+          "ur": "ان کی جلد کو نہ رگڑیں اور نہ ہی براہ راست شدید گرمی پہنچائیں (جیسے گرم پانی کی بوتل)، اس سے دل کے مسائل پیدا ہو سکتے ہیں۔ 1122 پر کال کریں۔"
+        }
+      ]
+    },
+    {
+      "id": "snake_bite",
+      "title_en": "Snake Bite",
+      "title_ur": "سانپ کا کاٹنا",
+      "icon": "snake_icon",
+      "steps": [
+        {
+          "step": 1,
+          "en": "Call 1122 immediately. Keep the person completely still and calm to slow the spread of venom.",
+          "ur": "فوراً 1122 پر کال کریں۔ زہر کے پھیلاؤ کو کم کرنے کے لیے مریض کو بالکل پرسکون اور ساکت رکھیں۔"
+        },
+        {
+          "step": 2,
+          "en": "Ensure the bitten area is kept below the level of the person's heart.",
+          "ur": "اس بات کو یقینی بنائیں کہ کاٹی گئی جگہ مریض کے دل کی سطح سے نیچے رہے۔"
+        },
+        {
+          "step": 3,
+          "en": "Remove any tight clothing, watches, or rings near the bite before swelling begins.",
+          "ur": "سوجن شروع ہونے سے پہلے کاٹی گئی جگہ کے قریب سے تنگ کپڑے، گھڑی یا انگوٹھی اتار لیں۔"
+        },
+        {
+          "step": 4,
+          "en": "Do NOT cut the wound, attempt to suck the venom out, or apply a tight tourniquet.",
+          "ur": "زخم کو کاٹنے، زہر چوسنے، یا بہت کس کر پٹی باندھنے (Tourniquet) کی ہرگز کوشش نہ کریں۔"
+        }
+      ]
+    },
+    {
+      "id": "animal_bite",
+      "title_en": "Dog Bite / Animal Bite",
+      "title_ur": "کتے یا جانور کا کاٹنا",
+      "icon": "dog_bite_icon",
+      "steps": [
+        {
+          "step": 1,
+          "en": "Wash the wound immediately with plenty of soap and warm running water for at least 5 minutes.",
+          "ur": "زخم کو فوراً صابن اور بہتے ہوئے گرم پانی سے کم از کم 5 منٹ تک دھوئیں۔"
+        },
+        {
+          "step": 2,
+          "en": "If the wound is bleeding heavily, elevate it and apply pressure with a clean cloth.",
+          "ur": "اگر زخم سے بہت خون بہہ رہا ہو تو اسے اونچا رکھیں اور صاف کپڑے سے دباؤ ڈالیں۔"
+        },
+        {
+          "step": 3,
+          "en": "Apply an antibiotic ointment if available, and cover the bite with a clean, sterile bandage.",
+          "ur": "اگر دستیاب ہو تو اینٹی بائیوٹک مرہم لگائیں اور زخم کو جراثیم سے پاک پٹی سے ڈھانپ دیں۔"
+        },
+        {
+          "step": 4,
+          "en": "Seek medical attention immediately for a rabies vaccination and to evaluate the risk of infection.",
+          "ur": "ریبیز کی ویکسین اور انفیکشن کا خطرہ جانچنے کے لیے فوراً ڈاکٹر سے رجوع کریں۔"
+        }
+      ]
+    },
+    {
+      "id": "fainting",
+      "title_en": "Fainting",
+      "title_ur": "بے ہوش ہونا",
+      "icon": "faint_icon",
+      "steps": [
+        {
+          "step": 1,
+          "en": "Help the person lie flat on their back to restore blood flow to the brain.",
+          "ur": "دماغ تک خون کی روانی بحال کرنے کے لیے مریض کو پیٹھ کے بل سیدھا لٹانے میں مدد کریں۔"
+        },
+        {
+          "step": 2,
+          "en": "Elevate their legs about 12 inches above heart level if possible.",
+          "ur": "اگر ممکن ہو تو ان کی ٹانگوں کو دل کی سطح سے تقریباً 12 انچ اوپر اٹھائیں۔"
+        },
+        {
+          "step": 3,
+          "en": "Loosen any tight clothing around their neck, chest, and waist. Ensure they have plenty of fresh air.",
+          "ur": "گردن، سینے اور کمر کے گرد تنگ کپڑے ڈھیلے کر دیں۔ یقینی بنائیں کہ انہیں تازہ ہوا مل رہی ہو۔"
+        },
+        {
+          "step": 4,
+          "en": "If they do not regain consciousness within 1 minute, call 1122 and prepare for CPR.",
+          "ur": "اگر وہ 1 منٹ کے اندر ہوش میں نہ آئیں تو 1122 پر کال کریں اور سی پی آر (CPR) کے لیے تیار رہیں۔"
+        }
+      ]
+    },
+    {
+      "id": "nosebleed",
+      "title_en": "Nosebleed",
+      "title_ur": "نکسیر (ناک سے خون بہنا)",
+      "icon": "nosebleed_icon",
+      "steps": [
+        {
+          "step": 1,
+          "en": "Have the person sit upright and lean their head slightly forward, NOT backwards.",
+          "ur": "مریض کو سیدھا بٹھائیں اور ان کا سر تھوڑا آگے کی طرف جھکائیں، پیچھے کی طرف ہرگز نہیں۔"
+        },
+        {
+          "step": 2,
+          "en": "Instruct them to pinch the soft part of their nose firmly just below the bony bridge.",
+          "ur": "انہیں کہیں کہ اپنی ناک کے نرم حصے کو (ہڈی کے بالکل نیچے) مضبوطی سے دبا کر رکھیں۔"
+        },
+        {
+          "step": 3,
+          "en": "Tell them to breathe through their mouth and keep pinching for a full 10 minutes without letting go.",
+          "ur": "انہیں منہ سے سانس لینے کا کہیں اور مسلسل 10 منٹ تک ناک دبا کر رکھنے کا کہیں۔"
+        },
+        {
+          "step": 4,
+          "en": "If the bleeding does not stop after 20 minutes, seek medical assistance.",
+          "ur": "اگر 20 منٹ کے بعد بھی خون بہنا بند نہ ہو تو طبی امداد حاصل کریں۔"
+        }
+      ]
+    },
+    {
+      "id": "eye_injury",
+      "title_en": "Eye Injury / Chemical in Eye",
+      "title_ur": "آنکھ کی چوٹ / کیمیکل کا جانا",
+      "icon": "eye_injury_icon",
+      "steps": [
+        {
+          "step": 1,
+          "en": "Prevent the person from rubbing their eye, as this can cause further damage.",
+          "ur": "مریض کو آنکھ ملنے سے روکیں، کیونکہ اس سے مزید نقصان ہو سکتا ہے۔"
+        },
+        {
+          "step": 2,
+          "en": "For chemicals or dust: Flush the eye with clean, lukewarm water continuously for 15 minutes, tilting the head so water runs outward.",
+          "ur": "کیمیکل یا مٹی کے لیے: آنکھ کو 15 منٹ تک مسلسل صاف، نیم گرم پانی سے دھوئیں۔ سر کو ایسے جھکائیں کہ پانی باہر کی طرف گرے۔"
+        },
+        {
+          "step": 3,
+          "en": "For embedded objects: Do NOT try to remove the object. Cover both eyes gently to prevent eye movement.",
+          "ur": "چبھنے والی چیز کے لیے: چیز کو نکالنے کی کوشش نہ کریں۔ آنکھوں کی حرکت کو روکنے کے لیے دونوں آنکھوں کو نرمی سے ڈھانپ دیں۔"
+        },
+        {
+          "step": 4,
+          "en": "Seek emergency medical help immediately.",
+          "ur": "فوراً ہنگامی طبی امداد حاصل کریں۔"
+        }
+      ]
+    }
+  ]
+}

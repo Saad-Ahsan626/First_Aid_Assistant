@@ -1,3 +1,4 @@
+import 'package:first_aid_assisstant/screens/homescreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: 
+      home: const Homescreen()
     );
   }
 }
