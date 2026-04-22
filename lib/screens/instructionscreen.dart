@@ -1,4 +1,5 @@
 import 'package:first_aid_assisstant/providers/emergency_provider.dart';
+import 'package:first_aid_assisstant/widgets/emergency_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -124,6 +125,7 @@ class InstructionScreen extends ConsumerWidget {
           );
         },
       ),
+      bottomNavigationBar: const EmergencyBottomBar(),
     );
   }
 }

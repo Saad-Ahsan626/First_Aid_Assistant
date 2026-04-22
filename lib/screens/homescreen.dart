@@ -1,4 +1,5 @@
 import 'package:first_aid_assisstant/providers/emergency_provider.dart';
+import 'package:first_aid_assisstant/widgets/emergency_bottom_bar.dart';
 import 'package:first_aid_assisstant/widgets/emergency_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -120,6 +121,7 @@ class _HomescreenState extends ConsumerState<Homescreen> {
           },
         ),
       ),
+      bottomNavigationBar: const EmergencyBottomBar(),
       
     );
   }
