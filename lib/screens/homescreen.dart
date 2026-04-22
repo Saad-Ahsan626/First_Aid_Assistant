@@ -4,20 +4,15 @@ import 'package:first_aid_assisstant/widgets/emergency_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
-class Homescreen extends ConsumerStatefulWidget {
+class Homescreen extends ConsumerWidget {
   const Homescreen({super.key});
 
   @override
-  ConsumerState<Homescreen> createState() => _HomescreenState();
-}
-
-class _HomescreenState extends ConsumerState<Homescreen> {
-  @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
+      bottomNavigationBar: const EmergencyBottomBar(),
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
@@ -54,16 +49,6 @@ class _HomescreenState extends ConsumerState<Homescreen> {
         ),
       ),
       appBar: AppBar(
-        actions: [
-          Row(
-            children: [
-              IconButton(
-                icon: const Icon(CupertinoIcons.search),
-                onPressed: () {},
-              ),
-            ],
-          ),
-        ],
         backgroundColor: const Color(0xFF129490),
         title: Center(
           child: Text(
@@ -78,51 +63,103 @@ class _HomescreenState extends ConsumerState<Homescreen> {
         ),
       ),
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: [Colors.white, Colors.white70],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
         ),
-        child: Consumer(
-          builder: (context, ref, child) {
-            final emergencyList = ref.watch(EmergencyProvider);
-
-            return Expanded(
-              child: emergencyList.when(
-                loading: () => const Center(child: CircularProgressIndicator()),
-                error: (error, stack) => Center(child: Text('Error: $error')),
-                data: (emergencies) {
-                  if (emergencies.isEmpty) {
-                    return const Center(child: Text('No emergencies found'));
-                  }
-                  return SingleChildScrollView(
-                    padding: const EdgeInsets.all(12.0),
-                    child: StaggeredGrid.count(
-                      crossAxisCount: 2,
-                      mainAxisSpacing: 12,
-                      crossAxisSpacing: 12,
-                      children: List.generate(emergencies.length, (index) {
-                        final emergency = emergencies[index];
-
-                        final int columnSpan = (index % 3 == 0) ? 2 : 1;
-
-                        return StaggeredGridTile.fit(
-                          crossAxisCellCount: columnSpan,
-                          child: Emergency_card(context, emergency, columnSpan == 2),
-                        );
-                      }),
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 8.0),
+              child: TextField(
+                decoration: InputDecoration(
+                  hintText: "Search emergency",
+                  prefixIcon: const Icon(
+                    CupertinoIcons.search,
+                    color: Color(0xFF129490),
+                  ),
+                  filled: true,
+                  fillColor: Colors.white,
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(30),
+                    borderSide: const BorderSide(
+                      color: Color(0xFF129490),
+                      width: 1.5,
                     ),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(30),
+                    borderSide: BorderSide(color: Colors.grey.shade300),
+                  ),
+                ),
+                onChanged: (value) {
+                  ref.read(searchQueryProvider.notifier).state = value
+                      .toLowerCase();
+                },
+              ),
+            ),
+
+            Expanded(
+              child: Consumer(
+                builder: (context, gridRef, child) {
+                  final searchQuery = gridRef.watch(searchQueryProvider);
+                  final emergencyList = gridRef.watch(EmergencyProvider);
+
+                  return emergencyList.when(
+                    loading: () =>
+                        const Center(child: CircularProgressIndicator()),
+                    error: (error, stack) =>
+                        Center(child: Text('Error: $error')),
+                    data: (emergencies) {
+                      final filteredList = emergencies.where((emergency) {
+                        return emergency.titleEn.toLowerCase().contains(
+                              searchQuery,
+                            ) ||
+                            emergency.titleUr.contains(searchQuery);
+                      }).toList();
+
+                      if (filteredList.isEmpty) {
+                        return const Center(
+                          child: Text(
+                            'No matching emergencies found',
+                            style: TextStyle(fontSize: 16, color: Colors.grey),
+                          ),
+                        );
+                      }
+
+                      return SingleChildScrollView(
+                        padding: const EdgeInsets.all(12.0),
+                        child: StaggeredGrid.count(
+                          crossAxisCount: 2,
+                          mainAxisSpacing: 12,
+                          crossAxisSpacing: 12,
+
+                          children: List.generate(filteredList.length, (index) {
+                            final emergency = filteredList[index];
+                            final int columnSpan = (index % 3 == 0) ? 2 : 1;
+
+                            return StaggeredGridTile.fit(
+                              crossAxisCellCount: columnSpan,
+                              child: Emergency_card(
+                                context,
+                                emergency,
+                                columnSpan == 2,
+                              ),
+                            );
+                          }),
+                        ),
+                      );
+                    },
                   );
                 },
               ),
-            );
-          },
+            ),
+          ],
         ),
       ),
-      bottomNavigationBar: const EmergencyBottomBar(),
-      
     );
   }
 }

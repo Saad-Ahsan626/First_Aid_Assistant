@@ -9,3 +9,5 @@ final EmergencyProvider = FutureProvider<List<EmergencyModel>>((ref) async {
 });
 
 final isUrduProvider = StateProvider.autoDispose<bool>((ref) => false);
+
+final searchQueryProvider = StateProvider<String>((ref) => '');
