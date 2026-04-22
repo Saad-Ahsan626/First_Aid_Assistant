@@ -109,7 +109,7 @@ class _HomescreenState extends ConsumerState<Homescreen> {
 
                         return StaggeredGridTile.fit(
                           crossAxisCellCount: columnSpan,
-                          child: Emergency_card(emergency, columnSpan == 2),
+                          child: Emergency_card(context, emergency, columnSpan == 2),
                         );
                       }),
                     ),

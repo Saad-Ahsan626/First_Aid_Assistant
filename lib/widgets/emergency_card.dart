@@ -1,8 +1,16 @@
+import 'package:first_aid_assisstant/screens/instructionscreen.dart';
 import 'package:flutter/material.dart';
 
-Widget Emergency_card(dynamic emergency, bool isLarge) {
+Widget Emergency_card(BuildContext context, dynamic emergency, bool isLarge) {
   return InkWell(
-    onTap: () => {},
+    onTap: () {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => InstructionScreen(emergency: emergency),
+        ),
+      );
+    },
     child: Container(
       width: double.infinity,
       decoration: BoxDecoration(
@@ -18,35 +26,34 @@ Widget Emergency_card(dynamic emergency, bool isLarge) {
       ),
       padding: const EdgeInsets.all(16),
       child: Column(
-        crossAxisAlignment: isLarge ? CrossAxisAlignment.center : CrossAxisAlignment.start,
+        crossAxisAlignment: isLarge
+            ? CrossAxisAlignment.center
+            : CrossAxisAlignment.start,
         children: [
           ClipRRect(
-              borderRadius: BorderRadius.circular(8),
-              child: Image.asset(
-                emergency.icon,
-                height: isLarge ? 80 : 50,
-                width: isLarge ? 80 : 50,
-                fit: BoxFit.cover,
-                
-                
-                errorBuilder: (context, error, stackTrace) {
-                  return Icon(
-                    Icons.medical_services,
-                    color: Colors.redAccent,
-                    size: isLarge ? 80 : 50,
-                  );
-                },
-              ),
+            borderRadius: BorderRadius.circular(8),
+            child: Image.asset(
+              emergency.icon,
+              height: isLarge ? 80 : 50,
+              width: isLarge ? 80 : 50,
+              fit: BoxFit.cover,
+
+              errorBuilder: (context, error, stackTrace) {
+                return Icon(
+                  Icons.medical_services,
+                  color: Colors.redAccent,
+                  size: isLarge ? 80 : 50,
+                );
+              },
             ),
+          ),
           const SizedBox(height: 12),
           Text(
             emergency.titleEn,
             textAlign: isLarge ? TextAlign.center : TextAlign.left,
             style: TextStyle(
               fontWeight: FontWeight.bold,
-              fontSize: isLarge
-                  ? 20
-                  : 16, 
+              fontSize: isLarge ? 20 : 16,
             ),
           ),
           const SizedBox(height: 4),
