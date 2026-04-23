@@ -1,7 +1,9 @@
 import 'package:first_aid_assisstant/providers/emergency_provider.dart';
+import 'package:first_aid_assisstant/providers/tts_provider.dart';
 import 'package:first_aid_assisstant/widgets/emergency_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 
 class InstructionScreen extends ConsumerWidget {
   final dynamic emergency;
@@ -11,6 +13,7 @@ class InstructionScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final isUrdu = ref.watch(isUrduProvider);
+    final tts = ref.watch(ttsProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -33,6 +36,9 @@ class InstructionScreen extends ConsumerWidget {
                 inactiveTrackColor: Colors.white30,
                 onChanged: (value) {
                   ref.read(isUrduProvider.notifier).state = value;
+                  if (!value) {
+                    tts.stop();
+                  }
                 },
               ),
               Text(
@@ -99,8 +105,9 @@ class InstructionScreen extends ConsumerWidget {
                             color: Colors.teal,
                             size: 28,
                           ),
-                          onPressed: () {
-                            print("Reading aloud: ${step.ur}");
+                          onPressed: () async {
+                            await tts.stop();
+                            await tts.speak(step.ur);
                           },
                         ),
                     ],
