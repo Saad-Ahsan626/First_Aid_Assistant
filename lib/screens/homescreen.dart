@@ -1,4 +1,5 @@
 import 'package:first_aid_assisstant/providers/emergency_provider.dart';
+import 'package:first_aid_assisstant/theme/app_theme.dart';
 import 'package:first_aid_assisstant/widgets/emergency_bottom_bar.dart';
 import 'package:first_aid_assisstant/widgets/emergency_card.dart';
 import 'package:flutter/cupertino.dart';
@@ -42,6 +43,11 @@ class Homescreen extends ConsumerWidget {
               leading: const Icon(CupertinoIcons.brightness),
               title: const Text('Change Theme'),
               onTap: () {
+                final currentTheme = ref.read(themeModeProvider);
+                ref.read(themeModeProvider.notifier).state =
+                    currentTheme == ThemeMode.light
+                        ? ThemeMode.dark
+                        : ThemeMode.light;
                 Navigator.pop(context);
               },
             ),

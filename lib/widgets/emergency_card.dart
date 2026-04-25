@@ -14,7 +14,7 @@ Widget Emergency_card(BuildContext context, dynamic emergency, bool isLarge) {
     child: Container(
       width: double.infinity,
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Theme.of(context).cardColor,
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
