@@ -2,11 +2,10 @@ import 'package:first_aid_assisstant/screens/homescreen.dart';
 import 'package:first_aid_assisstant/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:first_aid_assisstant/theme/app_theme.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const MyApp());
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends ConsumerWidget {
@@ -16,8 +15,7 @@ class MyApp extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final themeMode = ref.watch(themeModeProvider);
 
-    return ProviderScope(
-      child: MaterialApp(
+    return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'First Aid Assistant',
         themeMode: themeMode,
@@ -26,7 +24,6 @@ class MyApp extends ConsumerWidget {
         darkTheme: AppTheme.darkTheme,
 
         home: const Homescreen(),
-      ),
-    );
+      );
   }
 }

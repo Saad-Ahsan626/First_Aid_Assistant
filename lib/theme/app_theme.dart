@@ -10,7 +10,7 @@ class AppTheme {
     return ThemeData(
       brightness: Brightness.light,
       primaryColor: primaryTeal,
-      scaffoldBackgroundColor: Colors.grey.shade50,
+      scaffoldBackgroundColor: Colors.black,
       cardColor: Colors.white,
       appBarTheme: const AppBarTheme(
         backgroundColor: primaryTeal,

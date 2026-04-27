@@ -13,6 +13,7 @@ class Homescreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       bottomNavigationBar: const EmergencyBottomBar(),
       drawer: Drawer(
         child: ListView(
