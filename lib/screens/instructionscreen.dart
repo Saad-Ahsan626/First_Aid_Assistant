@@ -121,7 +121,8 @@ class InstructionScreen extends ConsumerWidget {
                         : TextDirection.ltr,
                     textAlign: isUrdu ? TextAlign.right : TextAlign.left,
                     style: TextStyle(
-                      fontSize: 18,
+                      fontFamily: isUrdu ? 'JameelNoori' : null,
+                      fontSize: isUrdu ? 22 : 18,
                       height: 1.5,
                       fontWeight: FontWeight.w500,
                     ),

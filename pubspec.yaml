@@ -84,6 +84,11 @@ flutter_launcher_icons:
   image_path: "assets/icon/app_logo.png" 
   min_sdk_android: 21
 
+fonts:
+    - family: JameelNoori  
+      fonts:
+        - asset: assets/fonts/jameel_noori.ttf
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 

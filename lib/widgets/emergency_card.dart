@@ -52,8 +52,9 @@ Widget Emergency_card(BuildContext context, dynamic emergency, bool isLarge) {
             emergency.titleEn,
             textAlign: isLarge ? TextAlign.center : TextAlign.left,
             style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: isLarge ? 20 : 16,
+              fontFamily: 'JameelNoori',
+              color: Colors.grey.shade600,
+              fontSize: isLarge ? 20 : 18,
             ),
           ),
           const SizedBox(height: 4),
