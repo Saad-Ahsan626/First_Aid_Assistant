@@ -6,27 +6,30 @@ class EmergencyBottomBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isDarkMode = Theme.of(context).brightness == Brightness.dark;
     return SafeArea(
       child: Container(
         padding: const EdgeInsets.all(16.0),
         decoration: BoxDecoration(
-          color: Colors.white,
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withOpacity(0.1),
-              blurRadius: 10,
-              offset: const Offset(0, -3),
-            ),
-          ],
+          color: Theme.of(context).colorScheme.surface,
+          boxShadow: isDarkMode
+              ? []
+              : [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.05),
+                    blurRadius: 10,
+                    offset: const Offset(0, -3),
+                  ),
+                ],
         ),
         child: ElevatedButton.icon(
           style: ElevatedButton.styleFrom(
             backgroundColor: Colors.red,
             foregroundColor: Colors.white,
             minimumSize: const Size(double.infinity, 60),
-            elevation: 0,
+            elevation: isDarkMode ? 2 : 0,
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(12),
+              borderRadius: BorderRadius.circular(16),
             ),
           ),
 

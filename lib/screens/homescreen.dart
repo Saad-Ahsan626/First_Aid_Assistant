@@ -39,7 +39,7 @@ class Homescreen extends ConsumerWidget {
                 CupertinoIcons.location_solid,
                 color: Colors.redAccent,
               ),
-              title: const Text('Nearest Hosipital'),
+              title: const Text('Nearest Hospital'),
               onTap: () {
                 Navigator.pop(context);
 
@@ -89,25 +89,9 @@ class Homescreen extends ConsumerWidget {
             Padding(
               padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 8.0),
               child: TextField(
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   hintText: "Search emergency",
-                  prefixIcon: const Icon(
-                    CupertinoIcons.search,
-                    color: Color(0xFF129490),
-                  ),
-                  filled: true,
-                  fillColor: Colors.white,
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(30),
-                    borderSide: const BorderSide(
-                      color: Color(0xFF129490),
-                      width: 1.5,
-                    ),
-                  ),
-                  enabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(30),
-                    borderSide: BorderSide(color: Colors.grey.shade300),
-                  ),
+                  prefixIcon: Icon(CupertinoIcons.search),
                 ),
                 onChanged: (value) {
                   ref.read(searchQueryProvider.notifier).state = value
