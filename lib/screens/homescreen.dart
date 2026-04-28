@@ -1,5 +1,6 @@
 import 'package:first_aid_assisstant/providers/emergency_provider.dart';
 import 'package:first_aid_assisstant/theme/app_theme.dart';
+import 'package:first_aid_assisstant/utils/map_utils.dart';
 import 'package:first_aid_assisstant/widgets/emergency_bottom_bar.dart';
 import 'package:first_aid_assisstant/widgets/emergency_card.dart';
 import 'package:flutter/cupertino.dart';
@@ -34,10 +35,15 @@ class Homescreen extends ConsumerWidget {
               },
             ),
             ListTile(
-              leading: const Icon(CupertinoIcons.info),
-              title: const Text('About'),
+              leading: const Icon(
+                CupertinoIcons.location_solid,
+                color: Colors.redAccent,
+              ),
+              title: const Text('Nearest Hosipital'),
               onTap: () {
                 Navigator.pop(context);
+
+                MapUtils.openNearestHospital();
               },
             ),
             ListTile(
@@ -45,10 +51,11 @@ class Homescreen extends ConsumerWidget {
               title: const Text('Change Theme'),
               onTap: () {
                 final currentTheme = ref.read(themeModeProvider);
-                ref.read(themeModeProvider.notifier).state =
-                    currentTheme == ThemeMode.light
-                        ? ThemeMode.dark
-                        : ThemeMode.light;
+                ref
+                    .read(themeModeProvider.notifier)
+                    .state = currentTheme == ThemeMode.light
+                    ? ThemeMode.dark
+                    : ThemeMode.light;
                 Navigator.pop(context);
               },
             ),
