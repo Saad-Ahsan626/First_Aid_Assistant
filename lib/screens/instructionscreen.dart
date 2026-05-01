@@ -18,7 +18,7 @@ class InstructionScreen extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(isUrdu ? emergency.titleUr : emergency.titleEn),
-        backgroundColor: Colors.redAccent,
+        backgroundColor: Theme.of(context).primaryColor,
         foregroundColor: Colors.white,
         actions: [
           Row(
@@ -32,7 +32,7 @@ class InstructionScreen extends ConsumerWidget {
               ),
               Switch(
                 value: isUrdu,
-                activeColor: Colors.tealAccent,
+                activeColor: Colors.white,
                 inactiveTrackColor: Colors.white30,
                 onChanged: (value) {
                   ref.read(isUrduProvider.notifier).state = value;
@@ -59,11 +59,20 @@ class InstructionScreen extends ConsumerWidget {
         itemBuilder: (context, index) {
           final step = emergency.steps[index];
 
-          return Card(
+          return Container(
             margin: const EdgeInsets.only(bottom: 16.0),
-            elevation: 3,
-            shape: RoundedRectangleBorder(
+            decoration: BoxDecoration(
+              color: Theme.of(context).cardColor,
               borderRadius: BorderRadius.circular(12),
+              boxShadow: Theme.of(context).brightness == Brightness.dark
+                  ? []
+                  : [
+                      BoxShadow(
+                        color: const Color(0xFF1A1C1C).withOpacity(0.06),
+                        blurRadius: 16,
+                        offset: const Offset(0, 4),
+                      ),
+                    ],
             ),
             child: Padding(
               padding: const EdgeInsets.all(16.0),
@@ -73,11 +82,11 @@ class InstructionScreen extends ConsumerWidget {
                   Row(
                     children: [
                       CircleAvatar(
-                        backgroundColor: Colors.redAccent.withOpacity(0.1),
+                        backgroundColor: Theme.of(context).primaryColor.withOpacity(0.1),
                         child: Text(
                           "${step.step}",
-                          style: const TextStyle(
-                            color: Colors.redAccent,
+                          style: TextStyle(
+                            color: Theme.of(context).primaryColor,
                             fontWeight: FontWeight.bold,
                             fontSize: 18,
                           ),
@@ -100,9 +109,9 @@ class InstructionScreen extends ConsumerWidget {
 
                       if (isUrdu)
                         IconButton(
-                          icon: const Icon(
+                          icon: Icon(
                             Icons.volume_up,
-                            color: Colors.teal,
+                            color: Theme.of(context).primaryColor,
                             size: 28,
                           ),
                           onPressed: () async {
@@ -112,7 +121,7 @@ class InstructionScreen extends ConsumerWidget {
                         ),
                     ],
                   ),
-                  const Divider(height: 24),
+                  const SizedBox(height: 16),
                   Text(
                     isUrdu ? step.ur : step.en,
 

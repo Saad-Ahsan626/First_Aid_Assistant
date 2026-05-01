@@ -20,8 +20,8 @@ class Homescreen extends ConsumerWidget {
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
-            const DrawerHeader(
-              decoration: BoxDecoration(color: Color(0xFF129490)),
+            DrawerHeader(
+              decoration: BoxDecoration(color: Theme.of(context).primaryColor),
               child: Text(
                 'First Aid Assistant',
                 style: TextStyle(color: Colors.white, fontSize: 24),
@@ -63,7 +63,7 @@ class Homescreen extends ConsumerWidget {
         ),
       ),
       appBar: AppBar(
-        backgroundColor: const Color(0xFF129490),
+        backgroundColor: Theme.of(context).appBarTheme.backgroundColor,
         title: Center(
           child: Text(
             "First Aid Assistant",
@@ -77,13 +77,7 @@ class Homescreen extends ConsumerWidget {
         ),
       ),
       body: Container(
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            colors: [Colors.white, Colors.white70],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-          ),
-        ),
+        color: Colors.transparent,
         child: Column(
           children: [
             Padding(
