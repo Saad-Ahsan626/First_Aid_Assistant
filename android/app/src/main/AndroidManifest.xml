@@ -45,6 +45,12 @@
         <intent>
             <action android:name="android.intent.action.DIAL" />
         </intent>
+
+        <!-- Required for url_launcher to check if it can launch https URLs -->
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="https" />
+        </intent>
     </queries>
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />

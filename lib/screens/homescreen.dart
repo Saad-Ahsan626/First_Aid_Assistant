@@ -40,10 +40,28 @@ class Homescreen extends ConsumerWidget {
                 color: Colors.redAccent,
               ),
               title: const Text('Nearest Hospital'),
-              onTap: () {
+              onTap: () async {
                 Navigator.pop(context);
 
-                MapUtils.openNearestHospital();
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(
+                    content: Text('Locating nearest hospital...'),
+                    duration: Duration(seconds: 2),
+                  ),
+                );
+
+                try {
+                  await MapUtils.openNearestHospital();
+                } catch (e) {
+                  if (context.mounted) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: Text(e.toString()),
+                        backgroundColor: Theme.of(context).primaryColor,
+                      ),
+                    );
+                  }
+                }
               },
             ),
             ListTile(

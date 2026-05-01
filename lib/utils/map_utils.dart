@@ -28,14 +28,19 @@ class MapUtils {
       );
     }
 
+    // Explicitly get the current position to ensure precision
+    Position position = await Geolocator.getCurrentPosition(
+      desiredAccuracy: LocationAccuracy.high,
+    );
+
     final Uri googleMapsUrl = Uri.parse(
-      "https://www.google.com/maps/search/?api=1&query=hospital",
+      "https://www.google.com/maps/search/?api=1&query=hospital+near+${position.latitude},${position.longitude}",
     );
 
     if (await canLaunchUrl(googleMapsUrl)) {
       await launchUrl(googleMapsUrl, mode: LaunchMode.externalApplication);
     } else {
-      return Future.error('Could not open the map.');
+      return Future.error('Could not open the map in browser.');
     }
   }
 }
