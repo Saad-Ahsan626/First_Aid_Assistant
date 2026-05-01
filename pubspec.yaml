@@ -71,13 +71,15 @@ flutter:
     - assets/images/emergencies/
 
 flutter_native_splash:
-    color: "129490"
+    color: "F9F9F9"
+    color_dark: "121212"
     image: assets/first-aid-box.png
     android: true
     
     android_12:
       image: assets/first-aid-box.png
-      color: "129490"
+      color: "F9F9F9"
+      color_dark: "121212"
     
 flutter_launcher_icons:
   android: "launcher_icon"
