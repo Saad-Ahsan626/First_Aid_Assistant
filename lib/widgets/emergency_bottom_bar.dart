@@ -16,20 +16,20 @@ class EmergencyBottomBar extends StatelessWidget {
               ? []
               : [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.05),
-                    blurRadius: 10,
-                    offset: const Offset(0, -3),
+                    color: const Color(0xFF1A1C1C).withOpacity(0.06),
+                    blurRadius: 24,
+                    offset: const Offset(0, -8),
                   ),
                 ],
         ),
         child: ElevatedButton.icon(
           style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.red,
+            backgroundColor: Theme.of(context).primaryColor,
             foregroundColor: Colors.white,
             minimumSize: const Size(double.infinity, 60),
             elevation: isDarkMode ? 2 : 0,
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(16),
+              borderRadius: BorderRadius.circular(9999),
             ),
           ),
 
